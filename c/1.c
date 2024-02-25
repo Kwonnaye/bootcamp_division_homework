@@ -7,6 +7,16 @@
 
 int main() {
     // 이곳에 코드를 작성해주세요!
+    int num, reversed = 0;
 
+    scanf("%d", &num);
+
+    while (num != 0) {
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num /= 10;
+    }
+
+    printf("%d\n", reversed);
     return 0;
 }
